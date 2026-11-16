@@ -356,7 +356,6 @@
       border: 1px solid rgba(16, 185, 129, 0.3);
     }
 
-    /* Feature Grid */
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -409,7 +408,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
-      max-width: 880px;
+      max-width: 940px;
     }
 
     .price-card {
@@ -486,7 +485,6 @@
       margin-top: 0.75rem;
     }
 
-    /* Contact Form */
     .contact-form {
       display: grid;
       gap: 0.9rem;
@@ -504,7 +502,6 @@
       font-size: 0.9rem;
     }
 
-    /* Footer */
     footer {
       border-top: 1px solid var(--border);
       padding: 3rem 0;
@@ -623,7 +620,7 @@
         </div>
         <h1>Appointment scheduling &amp; CRM built for Australian small businesses.</h1>
         <p>
-          MateSlot gives barbers, salons, studios, and independent practitioners a dedicated booking subdomain, unlimited team members, and ATO-compliant Tax Invoice receipts for one flat monthly subscription.
+          MateSlot gives barbers, salons, studios, and multi-venue operators a dedicated booking storefront, unlimited team members, and ATO-compliant Tax Invoice receipts for one flat monthly subscription.
         </p>
         <div class="hero-cta">
           <a href="#pricing" class="btn btn-primary">Explore Subscription Pricing</a>
@@ -656,7 +653,7 @@
         <div class="section-header">
           <div class="section-eyebrow">Interactive Platform Preview</div>
           <h2>Dedicated tenant storefronts backed by a full operations suite.</h2>
-          <p>Every subscribing business receives an isolated subdomain (<code>business.mateslot.app</code>) with self-serve customer booking, rescheduling, and an admin control panel.</p>
+          <p>Every subscribing business receives an isolated subdomain (<code>business.mateslot.app</code>) or custom domain with self-serve customer booking, rescheduling, and an admin control panel.</p>
         </div>
 
         <div class="preview-shell">
@@ -767,8 +764,8 @@
             <p>Built-in 11-digit ABN validation, toggleable GST registration status, and automated Tax Invoice receipts on every booking.</p>
           </div>
           <div class="feature-card">
-            <h3>Custom Booking Prefixes</h3>
-            <p>Businesses can customise their 3-letter booking reference prefix (e.g., <code>EMS-1042</code>) or auto-derive it from their trading name.</p>
+            <h3>Deep Brand Customisation</h3>
+            <p>Tailor booking reference prefixes (e.g., <code>EMS-1042</code>), custom domain names, brand colour palettes, logos, and intake fields.</p>
           </div>
           <div class="feature-card">
             <h3>Self-Serve Customer Portal</h3>
@@ -794,14 +791,15 @@
         <div class="pricing-grid">
           <div class="price-card featured">
             <div>
-              <span class="tag-ok">Most Popular</span>
+              <span class="tag-ok">Standard Plan</span>
               <h3 style="margin-top:0.75rem; font-size:1.3rem;">MateSlot Business</h3>
               <p style="color:var(--text-muted); font-size:0.88rem;">Complete booking storefront, unlimited staff, and CRM for single-location Australian businesses.</p>
-              <div class="price-amount" id="plan-price">$29 <span>AUD / month (incl. GST)</span></div>
+              <div class="price-amount" id="plan-price">$149 <span>AUD / month (incl. GST)</span></div>
               <ul class="check-list">
                 <li>Dedicated <code>yourbusiness.mateslot.app</code> booking page</li>
                 <li>Unlimited team members &amp; individual rosters</li>
                 <li>Unlimited services, bookings &amp; client CRM records</li>
+                <li>Custom 3-letter booking reference prefix &amp; receipt footer</li>
                 <li>ATO-compliant ABN &amp; 10% GST Tax Invoice receipts</li>
                 <li>Automated confirmation, reschedule &amp; cancellation emails</li>
                 <li>Full JSON data export &amp; self-serve Stripe billing portal</li>
@@ -812,19 +810,22 @@
 
           <div class="price-card">
             <div>
-              <span class="pill" style="margin-bottom:0;">Multi-Site &amp; Custom Domains</span>
-              <h3 style="margin-top:0.75rem; font-size:1.3rem;">MateSlot Multi-Location</h3>
-              <p style="color:var(--text-muted); font-size:0.88rem;">For franchises, multi-venue studios, and agencies needing custom domain mapping and priority onboarding.</p>
-              <div class="price-amount" id="multi-price">$79 <span>AUD / month (incl. GST)</span></div>
+              <span class="pill" style="margin-bottom:0;">White-Label &amp; Multi-Location</span>
+              <h3 style="margin-top:0.75rem; font-size:1.3rem;">MateSlot Ultimate</h3>
+              <p style="color:var(--text-muted); font-size:0.88rem;">Full white-label customisation, multi-site management, and bespoke workflows for high-volume brands.</p>
+              <div class="price-amount" id="ultimate-price">$500 <span>AUD / month (incl. GST)</span></div>
               <ul class="check-list">
                 <li>Everything in MateSlot Business</li>
-                <li>Multiple branch subdomains under one owner login</li>
-                <li>Custom domain support (e.g., <code>book.yourbrand.com.au</code>)</li>
-                <li>Dedicated migration &amp; catalog import assistance</li>
-                <li>Priority email &amp; phone support (AEST/AEDT)</li>
+                <li>Multi-location branch management under one unified owner login</li>
+                <li>Custom domain mapping (e.g., <code>book.yourbrand.com.au</code>) with managed SSL</li>
+                <li>Full white-label storefront theming (custom logo, colours, fonts &amp; CSS overrides)</li>
+                <li>Removal of "Powered by MateSlot" footer branding</li>
+                <li>Custom email sender domain &amp; tailored HTML receipt templates</li>
+                <li>Custom client intake questions, booking rules &amp; webhook/API access</li>
+                <li>Dedicated onboarding, catalog migration &amp; priority AEST/AEDT support</li>
               </ul>
             </div>
-            <a href="#contact" class="btn btn-secondary" style="width:100%;">Contact Sales</a>
+            <a href="#contact" class="btn btn-secondary" style="width:100%;">Get MateSlot Ultimate</a>
           </div>
         </div>
       </div>
@@ -842,12 +843,12 @@
           <div class="info-box">
             <h3>Market Opportunity &amp; Revenue Model</h3>
             <p>
-              Over 280,000 Australian hair, beauty, wellness, fitness, and boutique studio operators rely on appointment scheduling. Incumbent platforms increasingly charge $15–$30+ per staff member per month plus marketplace commissions.
+              Over 280,000 Australian hair, beauty, wellness, fitness, and boutique studio operators rely on appointment scheduling. Incumbent platforms increasingly charge per-staff seat fees plus marketplace commissions.
             </p>
             <ul>
-              <li><strong>Pure B2B SaaS Subscription:</strong> Recurring monthly/annual AUD subscription fees collected via Stripe Billing.</li>
+              <li><strong>High-Margin B2B SaaS Subscription:</strong> Recurring $149/mo Business and $500/mo Ultimate AUD subscription tiers collected via Stripe Billing.</li>
               <li><strong>No Funds Custody Risk:</strong> End-consumer service fees are settled directly in person between the customer and the merchant; MateSlot does not hold or intermediate consumer funds.</li>
-              <li><strong>High Gross Margin Infrastructure:</strong> Lightweight Node.js + SQLite WAL multi-tenant architecture running behind Cloudflare edge caching and SSL.</li>
+              <li><strong>Lean Multi-Tenant Infrastructure:</strong> Lightweight Node.js + SQLite WAL multi-tenant architecture running behind Cloudflare edge caching and SSL.</li>
             </ul>
           </div>
 
@@ -887,7 +888,8 @@
             <form class="contact-form" id="inquiry-form">
               <select name="topic" required>
                 <option value="Investor Inquiry">Investor / Strategic Partnership Inquiry</option>
-                <option value="Business Onboarding">Australian Business Onboarding</option>
+                <option value="MateSlot Business ($149/mo)">MateSlot Business Onboarding ($149/mo AUD)</option>
+                <option value="MateSlot Ultimate ($500/mo)">MateSlot Ultimate Onboarding ($500/mo AUD)</option>
                 <option value="Compliance / Billing">Payment / Compliance Verification</option>
               </select>
               <input type="text" name="name" placeholder="Your Name" required />
@@ -949,20 +951,20 @@
     const billMonthly = document.getElementById('bill-monthly');
     const billAnnual = document.getElementById('bill-annual');
     const planPrice = document.getElementById('plan-price');
-    const multiPrice = document.getElementById('multi-price');
+    const ultimatePrice = document.getElementById('ultimate-price');
 
     billMonthly.addEventListener('click', () => {
       billMonthly.classList.add('active');
       billAnnual.classList.remove('active');
-      planPrice.innerHTML = '$29 <span>AUD / month (incl. GST)</span>';
-      multiPrice.innerHTML = '$79 <span>AUD / month (incl. GST)</span>';
+      planPrice.innerHTML = '$149 <span>AUD / month (incl. GST)</span>';
+      ultimatePrice.innerHTML = '$500 <span>AUD / month (incl. GST)</span>';
     });
 
     billAnnual.addEventListener('click', () => {
       billAnnual.classList.add('active');
       billMonthly.classList.remove('active');
-      planPrice.innerHTML = '$23 <span>AUD / month, billed $276 annually (incl. GST)</span>';
-      multiPrice.innerHTML = '$63 <span>AUD / month, billed $756 annually (incl. GST)</span>';
+      planPrice.innerHTML = '$119 <span>AUD / month, billed $1,428 annually (incl. GST)</span>';
+      ultimatePrice.innerHTML = '$400 <span>AUD / month, billed $4,800 annually (incl. GST)</span>';
     });
 
     document.getElementById('inquiry-form').addEventListener('submit', (e) => {
@@ -983,9 +985,9 @@
         <h4>1. Service Overview</h4>
         <p>MateSlot provides cloud-based appointment scheduling, team rostering, customer relationship management (CRM), and Tax Invoice receipt generation software ("Service") to business subscribers ("Merchants").</p>
         <h4>2. Merchant Accounts &amp; Subdomains</h4>
-        <p>Merchants are responsible for maintaining the confidentiality of their login credentials and ensuring that services, pricing, ABN details, and GST registration status displayed on their MateSlot subdomain comply with Australian Consumer Law and ATO requirements.</p>
+        <p>Merchants are responsible for maintaining the confidentiality of their login credentials and ensuring that services, pricing, ABN details, and GST registration status displayed on their MateSlot subdomain or custom domain comply with Australian Consumer Law and ATO requirements.</p>
         <h4>3. Subscriptions &amp; Billing</h4>
-        <p>Subscriptions are billed in advance on a monthly or annual recurring basis in Australian Dollars (AUD) via Stripe. Merchants may update payment methods or cancel their subscription at any time through the built-in Stripe Customer Portal.</p>
+        <p>Subscriptions ($149 AUD/month Business or $500 AUD/month Ultimate, or discounted annual equivalents) are billed in advance on a recurring basis in Australian Dollars (AUD) via Stripe. Merchants may update payment methods or cancel their subscription at any time through the built-in Stripe Customer Portal.</p>
         <h4>4. End-Customer Bookings</h4>
         <p>MateSlot provides scheduling software only and is not a party to service contracts between Merchants and their end customers. End-customer service fees are settled directly between the customer and the Merchant.</p>
       `,
